@@ -110,17 +110,17 @@
             <h2>Registration</h2>
             
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="fname" required>
-            
+            <input type="text" id="fname" name="fname" value="<?= isset($_POST['fname']) ? $_POST['fname'] : '' ?>" required>
+    
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lname" required>
-            
+            <input type="text" id="lname" name="lname" value="<?= isset($_POST['lname']) ? $_POST['lname'] : '' ?>" required>
+    
             <label for="cnum">Contact Number</label>
-            <input type="tel" id="cnum" name="cnum" required>
-            
+            <input type="tel" id="cnum" name="cnum" value="<?= isset($_POST['cnum']) ? $_POST['cnum'] : '' ?>" required>
+    
             <label for="uname">Username</label>
-            <input type="text" id="uname" name="uname" required>
-            
+            <input type="text" id="uname" name="uname" value="<?= isset($_POST['uname']) ? $_POST['uname'] : '' ?>" required>
+    
             <label for="pword">Password</label>
             <input type="password" id="pword" name="pword" required>
             
