@@ -49,6 +49,7 @@
             border-radius: 5px;
             text-align: left;
         }
+        
         table {
             width: 100%;
             border-collapse: collapse;
@@ -79,15 +80,57 @@
         .a{
             text-align: right;
         }
+        .logout, .add-employee {
 
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .logout {
+            background-color: #e74c3c;
+        }
+
+        .logout:hover {
+            background-color: #c0392b;
+        }
+
+        .add-employee {
+            background-color: #27ae60;
+        }
+
+        .add-employee:hover {
+            background-color: #219150;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
 
     </style>
 </head>
 <body>
 
     <div class="container">
-    <h3 >Manage User <a href="login.php">Logout</a></h3>
-
+    <h3 class="header">
+        <span>Manage User</span>
+        <div class="button-group">
+            <a href="register.php" class="add-employee">Add New Employee</a>
+            <a href="login.php" class="logout">Logout</a>
+        </div>
+    </h3>
         <table>
             <tr>
                 <th>ID</th>
