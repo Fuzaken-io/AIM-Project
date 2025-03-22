@@ -113,7 +113,7 @@
             font-weight: bold;
         }
         .cancel {
-            text-align: right;
+            text-align: left;
         }
     </style>
 </head>
@@ -121,7 +121,7 @@
     <form method="POST">
         <div class="cancel">
         <a href="welcome.php" title="Cancel">
-            <i class="fas fa-times" style="font-size: 24px; color: black;"></i></a>
+        <i class="fa fa-arrow-left"  style="font-size: 24px; color: black;"></i></a>
 
         </div>
         
